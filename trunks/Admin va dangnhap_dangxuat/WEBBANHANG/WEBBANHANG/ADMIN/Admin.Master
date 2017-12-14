@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="WEBBANHANG.ADMIN.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Trang quản trị viên</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/css/prettyPhoto.css" rel="stylesheet"/>
+    <link href="/css/price-range.css" rel="stylesheet"/>
+    <link href="/css/animate.css" rel="stylesheet"/>
+	<link href="/css/main.css" rel="stylesheet"/>
+    <link href="/css/Style.css" rel="stylesheet" />
+	<link href="/css/responsive.css" rel="stylesheet"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <div class="top">
+            <img src="/images/admin/banner_admin.jpg" alt="Alternate Text" style=" width:100%; height:100%; "/>
+        </div>
+        <div class="row">
+            <div class ="col-md-4">
+                <ul>
+                    <li>MENU</li>
+                    <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ADMIN/ThemSanPham.aspx">ĐĂNG SẢN PHẨM</asp:HyperLink> </li>
+                    <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ADMIN/SanPham.aspx">SẢN PHẨM</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/ADMIN/DonHang.aspx">THỐNG KÊ ĐƠN HÀNG</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/ADMIN/TaiKhoan.aspx">TÀI KHOẢN</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Default.aspx">TRANG CHỦ</asp:HyperLink></li>
+                    <li><asp:LinkButton ID="LinkButton1" OnClick="DangXuat_click" runat="server" >ĐĂNG XUẤT</asp:LinkButton></li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                    <asp:ContentPlaceHolder ID="Content" runat="server">
+                    </asp:ContentPlaceHolder>
+            </div>
+        </div>           
+    </div>
+    </form>
+</body>
+</html>
+
